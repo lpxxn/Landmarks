@@ -15,6 +15,8 @@
 		0A3E36E525C8E68700E1EA20 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E36E325C8E68700E1EA20 /* Landmark.swift */; };
 		0A3E36EB25C8E8D000E1EA20 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E36EA25C8E8D000E1EA20 /* ModelData.swift */; };
 		0A3E36EC25C8E8D000E1EA20 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E36EA25C8E8D000E1EA20 /* ModelData.swift */; };
+		0A4F09D225C9268D0014A1DB /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F09D125C9268D0014A1DB /* LandmarkList.swift */; };
+		0A4F09D325C9268D0014A1DB /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F09D125C9268D0014A1DB /* LandmarkList.swift */; };
 		0AB5737E25C794B3007FE5EA /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5737D25C794B3007FE5EA /* Tests_iOS.swift */; };
 		0AB5738925C794B3007FE5EA /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5738825C794B3007FE5EA /* Tests_macOS.swift */; };
 		0AB5738B25C794B3007FE5EA /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5736225C794B2007FE5EA /* LandmarksApp.swift */; };
@@ -51,6 +53,7 @@
 		0A3E36DC25C8E66E00E1EA20 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		0A3E36E325C8E68700E1EA20 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		0A3E36EA25C8E8D000E1EA20 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		0A4F09D125C9268D0014A1DB /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		0AB5736225C794B2007FE5EA /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		0AB5736325C794B2007FE5EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AB5736425C794B3007FE5EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				0AB573AA25C79C97007FE5EA /* MapView.swift */,
+				0A4F09D125C9268D0014A1DB /* LandmarkList.swift */,
 				0AB573A325C79A2E007FE5EA /* CircleImage.swift */,
 				0AB5736325C794B2007FE5EA /* ContentView.swift */,
 				0A0A13FD25C8F35D005A364E /* LandmarkRow.swift */,
@@ -279,7 +283,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					0AB5736825C794B3007FE5EA = {
 						CreatedOnToolsVersion = 12.3;
@@ -361,6 +365,7 @@
 				0AB5738D25C794B3007FE5EA /* ContentView.swift in Sources */,
 				0AB573AB25C79C97007FE5EA /* MapView.swift in Sources */,
 				0AB5738B25C794B3007FE5EA /* LandmarksApp.swift in Sources */,
+				0A4F09D225C9268D0014A1DB /* LandmarkList.swift in Sources */,
 				0AB573A425C79A2E007FE5EA /* CircleImage.swift in Sources */,
 				0A3E36E425C8E68700E1EA20 /* Landmark.swift in Sources */,
 				0A0A13FE25C8F35D005A364E /* LandmarkRow.swift in Sources */,
@@ -375,6 +380,7 @@
 				0AB5738E25C794B3007FE5EA /* ContentView.swift in Sources */,
 				0AB573AC25C79C97007FE5EA /* MapView.swift in Sources */,
 				0AB5738C25C794B3007FE5EA /* LandmarksApp.swift in Sources */,
+				0A4F09D325C9268D0014A1DB /* LandmarkList.swift in Sources */,
 				0AB573A525C79A2E007FE5EA /* CircleImage.swift in Sources */,
 				0A3E36E525C8E68700E1EA20 /* Landmark.swift in Sources */,
 				0A0A13FF25C8F35D005A364E /* LandmarkRow.swift in Sources */,
@@ -574,6 +580,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
@@ -596,6 +603,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;

@@ -23,7 +23,7 @@ func load<T:Decodable>(_ filename: String) -> T {
     } catch {
         fatalError("Couldn't \(filename) frommain bundle in main bundle: \n\(error)")
     }
-    
+    print("data\(data)")
     do {
         let decoder = JSONDecoder()
         return try decoder.decode(T.self, from: data)
