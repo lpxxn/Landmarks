@@ -43,18 +43,26 @@ struct LandmarkList: View {
              
 
             */
-            detailView
-            
+            //detailView
+//            if self.selectedItem != nil {
+//                LandmarkDetail(landmark: selectedItem!)
+//            } else {
+//                LandmarkDetail(landmark: landmarks[0])
+//            }
+
         }
 
     }
-    @ViewBuilder var detailView: some View {
+    var detailView: some View {
         if selectedItem != nil {
-            LandmarkDetail(landmark: selectedItem!)
+            print("bbbb")
+            return  LandmarkDetail(landmark: selectedItem!)
             //LandmarkDetail(landmark: landmarks[selectedItem!])
-        } else {
-            LandmarkDetail(landmark: landmarks[0])
         }
+        print("aaa")
+        //self.selectedItem = landmarks[0]
+        return LandmarkDetail(landmark: landmarks[0])
+        
     }
 }
 /*
