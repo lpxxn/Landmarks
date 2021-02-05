@@ -8,61 +8,38 @@
 import SwiftUI
 
 struct LandmarkList: View {
-    //@State var selectedItem: Int?
-    @State var selectedItem: Landmark?
+    
+    @State private var showFavoritesOnly = false
+    
+    var filteredLandmarks: [Landmark] {
+        landmarks.filter { landmark in
+            (!showFavoritesOnly || landmark.isFavorite)
+        }
+    }
 
     var body: some View {
         // 继承 Identifiable后就可以不这么用了
         //List (landmarks, id: \.id) { landmark in
         NavigationView {
-            List(landmarks, id: \.self, selection: $selectedItem){ landmark in
-                NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                    VStack {
-                        LandmarkRow(landmark: landmark).tag(landmark)
-                        Divider()
+            List {
+                Toggle(isOn: $showFavoritesOnly, label: {
+                    Text("Favorites only")
+                })
+                
+                ForEach(filteredLandmarks) {landmark in
+                    NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                        VStack {
+                            LandmarkRow(landmark: landmark).tag(landmark)
+                            //Divider()
+                        }
                     }
                 }
             }
             .frame(minWidth: 200)
             .navigationTitle("Landmarks")
-            .onAppear {
-                self.selectedItem = landmarks[0]
-            }
-            /*
-            List(landmarks) { landmark in
-                //NavigationLink(destination: LandmarkDetail(), tag:landmark.id, selection: self.$selection) {
-                NavigationLink(destination: LandmarkDetail()) {
-                    LandmarkRow(landmark: landmark).tag(landmark)
-                }
-            }
-            .frame(minWidth: 200)
-            .navigationTitle("Landmarks")
-            .onAppear {
-                //self.selection = 0
-            }
-             
-
-            */
-            //detailView
-//            if self.selectedItem != nil {
-//                LandmarkDetail(landmark: selectedItem!)
-//            } else {
-//                LandmarkDetail(landmark: landmarks[0])
-//            }
 
         }
 
-    }
-    var detailView: some View {
-        if selectedItem != nil {
-            print("bbbb")
-            return  LandmarkDetail(landmark: selectedItem!)
-            //LandmarkDetail(landmark: landmarks[selectedItem!])
-        }
-        print("aaa")
-        //self.selectedItem = landmarks[0]
-        return LandmarkDetail(landmark: landmarks[0])
-        
     }
 }
 /*
