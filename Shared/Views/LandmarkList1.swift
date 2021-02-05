@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct LandmarkList1: View {
+    
     @State var selectedItem: Landmark?
 
+    var landmarks = ModelData().landmarks
 
     var body: some View {
         // 继承 Identifiable后就可以不这么用了
@@ -82,3 +84,5 @@ struct LandmarkList1_Previews: PreviewProvider {
 //        }
     }
 }
+
+
