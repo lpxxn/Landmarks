@@ -12,12 +12,17 @@ struct PublishedDemo: View {
     
     var body: some View {
         VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text("Hello,World!testPublished")
             Text("count: \(viewModelT.value)")
             self.$viewModelT.isOn.wrappedValue ? Text("on") : Text("off")
             Toggle(isOn: self.$viewModelT.isOn, label: {
                 /*@START_MENU_TOKEN@*/Text("Label")/*@END_MENU_TOKEN@*/
             }).fixedSize()
+
+            self.$viewModelT.isOn2.wrappedValue == true ? Text("on2") : Text("off2")
+            Toggle(isOn: self.$viewModelT.isOn2, label: {
+                Text("Label2")
+            })
         }
     }
 }
@@ -30,6 +35,9 @@ class DataViewModelT1: ObservableObject {
             UserDefaults.standard.set(self.isOn, forKey: "isOn")
         }
     }
+    
+    @Published var isOn2: Bool = false
+    
     init() {
         for i in 1...10 {
             DispatchQueue.main.asyncAfter(deadline: .now() + Double(i)) {
