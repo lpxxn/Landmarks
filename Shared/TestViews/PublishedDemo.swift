@@ -29,13 +29,11 @@ struct PublishedDemo: View {
 
 class DataViewModelT1: ObservableObject {
     @Published var value: Int = 0
-    
     @Published var isOn: Bool = UserDefaults.standard.bool(forKey: "isOn") {
         didSet {
             UserDefaults.standard.set(self.isOn, forKey: "isOn")
         }
     }
-    
     @Published var isOn2: Bool = false
     
     init() {
