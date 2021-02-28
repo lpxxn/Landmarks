@@ -135,7 +135,6 @@
 				0AB573A325C79A2E007FE5EA /* CircleImage.swift */,
 				0AB5736325C794B2007FE5EA /* ContentView.swift */,
 				0A0A13FD25C8F35D005A364E /* LandmarkRow.swift */,
-				0A95744525E0CEF0003291AD /* PublishedDemo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +163,7 @@
 		0AB5736125C794B2007FE5EA /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0AFAE06C25EB445B00E68B04 /* TestViews */,
 				0A3E36F125C8EAAA00E1EA20 /* Resources */,
 				0AB5736225C794B2007FE5EA /* LandmarksApp.swift */,
 				0A3E36F225C8EACB00E1EA20 /* Views */,
@@ -217,6 +217,14 @@
 				0AB5738A25C794B3007FE5EA /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		0AFAE06C25EB445B00E68B04 /* TestViews */ = {
+			isa = PBXGroup;
+			children = (
+				0A95744525E0CEF0003291AD /* PublishedDemo.swift */,
+			);
+			path = TestViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
