@@ -37,6 +37,10 @@
 		0AB573A525C79A2E007FE5EA /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB573A325C79A2E007FE5EA /* CircleImage.swift */; };
 		0AB573AB25C79C97007FE5EA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB573AA25C79C97007FE5EA /* MapView.swift */; };
 		0AB573AC25C79C97007FE5EA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB573AA25C79C97007FE5EA /* MapView.swift */; };
+		0AFAE07D25EB466700E68B04 /* StateDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAE07C25EB466700E68B04 /* StateDemo.swift */; };
+		0AFAE07E25EB466700E68B04 /* StateDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAE07C25EB466700E68B04 /* StateDemo.swift */; };
+		0AFAE08425EB5FF900E68B04 /* BindDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAE08325EB5FF900E68B04 /* BindDemo.swift */; };
+		0AFAE08525EB5FF900E68B04 /* BindDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAE08325EB5FF900E68B04 /* BindDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +86,9 @@
 		0AB5738A25C794B3007FE5EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AB573A325C79A2E007FE5EA /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		0AB573AA25C79C97007FE5EA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0AFAE07C25EB466700E68B04 /* StateDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDemo.swift; sourceTree = "<group>"; };
+		0AFAE08325EB5FF900E68B04 /* BindDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindDemo.swift; sourceTree = "<group>"; };
+		0AFAE08A25EBBB5C00E68B04 /* test.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = test.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +230,9 @@
 			isa = PBXGroup;
 			children = (
 				0A95744525E0CEF0003291AD /* PublishedDemo.swift */,
+				0AFAE07C25EB466700E68B04 /* StateDemo.swift */,
+				0AFAE08325EB5FF900E68B04 /* BindDemo.swift */,
+				0AFAE08A25EBBB5C00E68B04 /* test.md */,
 			);
 			path = TestViews;
 			sourceTree = "<group>";
@@ -387,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB5738D25C794B3007FE5EA /* ContentView.swift in Sources */,
+				0AFAE08425EB5FF900E68B04 /* BindDemo.swift in Sources */,
 				0A1594DB25CD4798001E1FB7 /* LandmarkList1.swift in Sources */,
 				0AB573AB25C79C97007FE5EA /* MapView.swift in Sources */,
 				0AB5738B25C794B3007FE5EA /* LandmarksApp.swift in Sources */,
@@ -396,6 +407,7 @@
 				0A3E36E425C8E68700E1EA20 /* Landmark.swift in Sources */,
 				0A0A13FE25C8F35D005A364E /* LandmarkRow.swift in Sources */,
 				0A1594E225CD4E87001E1FB7 /* FavoriteButton.swift in Sources */,
+				0AFAE07D25EB466700E68B04 /* StateDemo.swift in Sources */,
 				0A3E36EB25C8E8D000E1EA20 /* ModelData.swift in Sources */,
 				0A95744625E0CEF0003291AD /* PublishedDemo.swift in Sources */,
 			);
@@ -406,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB5738E25C794B3007FE5EA /* ContentView.swift in Sources */,
+				0AFAE08525EB5FF900E68B04 /* BindDemo.swift in Sources */,
 				0A1594DC25CD4798001E1FB7 /* LandmarkList1.swift in Sources */,
 				0AB573AC25C79C97007FE5EA /* MapView.swift in Sources */,
 				0AB5738C25C794B3007FE5EA /* LandmarksApp.swift in Sources */,
@@ -415,6 +428,7 @@
 				0A3E36E525C8E68700E1EA20 /* Landmark.swift in Sources */,
 				0A0A13FF25C8F35D005A364E /* LandmarkRow.swift in Sources */,
 				0A1594E325CD4E87001E1FB7 /* FavoriteButton.swift in Sources */,
+				0AFAE07E25EB466700E68B04 /* StateDemo.swift in Sources */,
 				0A3E36EC25C8E8D000E1EA20 /* ModelData.swift in Sources */,
 				0A95744725E0CEF0003291AD /* PublishedDemo.swift in Sources */,
 			);
