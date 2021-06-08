@@ -11,7 +11,8 @@ struct FavoriteButton: View {
     @Binding var isSet: Bool
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        var h: String = "hello world!"
+        return Text(h)
     }
 }
 
